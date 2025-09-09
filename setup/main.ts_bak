@@ -1,0 +1,35 @@
+import { defineAppSetup } from '@slidev/types'
+
+/* plotly */
+import { VuePlotly } from 'vue3-plotly'
+
+import { Slider } from 'vue3-slider'
+
+import { reactive, toRefs } from 'vue'
+import { SliderComp } from 'vue-slider-component'
+import 'vue-slider-component/theme/antd.css'
+
+/* VueTableLite */
+// import VueTableLite from 'vue3-table-lite/ts'
+
+// import { VueImageZoomer } from 'vue-image-zoomer'
+// import 'vue-image-zoomer/dist/style.css'
+
+// import { InnerImageZoom } from 'vue-inner-image-zoom'
+
+// import { ZoomOnHover } from "vue-zoom-on-hover"
+
+export default defineAppSetup(({ app, router }) => {
+    setup() {
+    const data = reactive({ value: 0 })
+    return toRefs(data)
+  },
+
+  app.component('v-plotly', VuePlotly )
+  app.component('vue3-slider', Slider )
+  app.component('vue-slider', SliderComp )
+  // app.component('vue-image-zoomer', VueImageZoomer  )
+  // app.component('inner-image-zoom', InnerImageZoom  )
+  // app.component('zoom-on-hover', ZoomOnHover  )
+  // app.component('table-lite', VueTableLite  )
+})
