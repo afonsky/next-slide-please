@@ -48,12 +48,6 @@ class: text-center
 
 ---
 
-<div style="display: flex; flex-direction: column; align-items: flex-start;">
-  <CircleSectorInput />
-</div>
-
----
-
 <div class="grid grid-cols-[4fr_3fr] gap-10">
 <div>
 <figure>
