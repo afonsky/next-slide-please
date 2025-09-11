@@ -48,6 +48,12 @@ class: text-center
 
 ---
 
+<div style="display: flex; flex-direction: column; align-items: flex-start;">
+  <CircleSectorInput />
+</div>
+
+---
+
 <div class="grid grid-cols-[4fr_3fr] gap-10">
 <div>
 <figure>
@@ -237,61 +243,62 @@ All of the above are very important, for example, when you are writing a grant a
 <div>
 <br>
 
-### Какие могут быть ограничения?<br><br><br>
+### Какие могут быть ещё ограничения?<br><br><br>
 
-<div v-click.hide at="3">
 <div v-click at="1">
 
 ### Использование подходящих инструментов?
 </div>
-<br><br><br>
+<br><br>
 <div v-click at="2">
 
 ### Какие инструменты нам подойдут?
 </div>
 </div>
 </div>
-</div>
+<div v-click at="3">
 <br>
-<div v-click.hide at="6">
-<div v-click at="5">
-  <RangeA />
-</div>
-</div>
-<br>
-<div v-click at="6">
-  <RangeB />
-</div>
-
-
----
-
-<div class="grid grid-cols-[4fr_4fr] gap-10">
-<div>
+<center>
 <figure>
-  <img src="/mj_archaeologist.png" style="width: 300px">
+  <img src="/photo_2025-09-10_22-56-58.jpg" style="width: 170px">
+  <figcaption style="color:#b3b3b3ff; font-size: 11px; margin-top: -44px; margin-left: -608px;"><span>Источник изображения: Midjourney 6.0.<br> Промпт: "heavy construction equipment in outline cartoon style"</span>
+    </figcaption>
 </figure>
-</div>
-<div>
-<br>
-
-### Какие могут быть ограничения?<br><br>
-
-<div v-click at="1">
-
-### Нужно оптимизировать несколько параметров сразу
-</div>
-</div>
-</div>
-
-<br>
-<div v-click at="1">
-  <RangeС />
+</center>
 </div>
 
 ---
-zoom: 0.9
+
+# Например, георадар
+
+<CircleSectorInputA />
+
 ---
+
+# Например, георадар
+### Часто приходится оптимизировать несколько параметров сразу
+
+<div style="margin-top: -32px;">
+<CircleSectorInputB />
+</div>
+
+---
+
+# Например, георадар
+### Часто приходится оптимизировать несколько параметров сразу
+### И учитывать стоимость
+
+<div style="margin-top: -74px;">
+<CircleSectorInputC />
+</div>
+
+
+---
+zoom: 0.85
+---
+
+# Обычно параметров оптимизации достаточно много
+
 
 <RangeD />
 
@@ -339,7 +346,7 @@ zoom: 0.9
 
 ---
 
-# Как сдвигать все движки в нужном направлении
+# Как сдвигать все ползунки в нужном направлении
 
 <br>
 
