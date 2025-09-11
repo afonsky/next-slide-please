@@ -6,21 +6,16 @@
     <div style="display: flex; flex-direction: column; align-items: center;">
       <br>
       <br>
-      <br>
-      <br>
-      <br>
 
       <Range 
         v-model="radius"
-        style="width: 220px; margin-bottom: 8px;"
+        style="width: 220px; margin-top: 32px; margin-bottom: 8px;"
         :min="0.1" 
         :max="100" 
         :step="0.1"
         :thumbLimits="[0, 100]"
       />
-      <span style="margin-top: 8px;">Диапазон сенсора по Y (м): {{ Math.round(radius * 10) / 100 }}</span>
-      <br>
-      <br>
+      <span style="margin-top: 8px;margin-bottom: 32px;">Диапазон сенсора по Y (м): {{ Math.round(radius * 10) / 100 }}</span>
       <Range 
         v-model="angle"
         style="width: 220px; margin-bottom: 8px;"
@@ -29,7 +24,7 @@
         :step="0.1"
         :thumbLimits="[0, 100]"
       />
-      <span style="margin-top: 8px;">Диапазон сенсора по X (м): {{ Math.round(angle * 10) / 100 }}</span>
+      <span style="margin-top: 8px; margin-bottom: 32px;">Диапазон сенсора по X (м): {{ Math.round(angle * 10) / 100 }}</span>
       <br>
       <br>
   <span>Стоимость сенсора: {{ Math.round((radius**3.5 + 300 * radius**2 + 100000 * angle + 7000)/1000) }}<br> (Максимум: 10000)</span>

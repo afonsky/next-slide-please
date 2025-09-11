@@ -5,8 +5,6 @@
     <!-- Left column: slider and value -->
     <div style="display: flex; flex-direction: column; align-items: center;">
       <br>
-      <br>
-      <br>
       <Range 
         v-model="radius"
         style="width: 220px; margin-bottom: 8px;"
@@ -15,7 +13,7 @@
         :step="0.1"
         :thumbLimits="[0, 100]"
       />
-      <span style="margin-top: 8px;">Диапазон сенсора (м): {{ Math.round(radius * 10) / 100 }}</span>
+      <span style="margin-top: 16px;">Диапазон сенсора (м): {{ Math.round(radius * 10) / 100 }}</span>
     </div>
     <!-- Right column: SVG drawing -->
     <div style="display: flex; flex-direction: column; align-items: center;">

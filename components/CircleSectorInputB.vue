@@ -18,7 +18,7 @@
         :step="0.1"
         :thumbLimits="[0, 100]"
       />
-      <span style="margin-top: 8px;">Диапазон сенсора по Y (м): {{ Math.round(radius * 10) / 100 }}</span>
+      <span style="margin-top: 8px; margin-bottom: 56px;">Диапазон сенсора по Y (м): {{ Math.round(radius * 10) / 100 }}</span>
       <br>
       <br>
       <Range 
