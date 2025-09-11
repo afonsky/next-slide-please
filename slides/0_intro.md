@@ -383,3 +383,27 @@ zoom: 0.9
 </div>
 </div>
 
+---
+
+# Пример: гоночная машина
+
+<br>
+<br>
+<br>
+<div class="grid grid-cols-[5fr_5fr_8fr] gap-7">
+<div v-click at="1">
+<figure>
+  <img src="/photo_2025-09-11_16-37-39.jpg" style="width: 820px !important;">
+</figure>
+</div>
+<div v-click at="2">
+<figure>
+  <img src="/photo_2025-09-11_16-44-16.jpg" style="width: 820px !important;">
+</figure>
+</div>
+<div v-click at="3">
+<figure>
+  <img src="/digital_model_of_car.png" style="width: 820px !important;">
+</figure>
+</div>
+</div>
